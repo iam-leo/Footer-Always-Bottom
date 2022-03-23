@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* Fuente */
+    font-family: 'Josefin Sans', sans-serif;
+
+    /* Fondo */
+    background: hsla(238, 100%, 71%, 1);
+    background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1 );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;;
+
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 1fr auto; /*
+                                   * 1fr = el espacio que ocupara el contenedor-text en mi caso.
+                                   * auto = corresponde al espacio que ocupara el footer
+                                   */
+}
+
+.contenedor-texto{
+    width: 100%;
+    /* Centrar elemento vertical y horizontalmente */
+    align-self: center;
+    justify-self: center;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+}
+
+footer{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    color: #3538a3;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #3538a3;
+}
